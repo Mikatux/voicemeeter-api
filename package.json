@@ -1,0 +1,21 @@
+{
+  "name": "voicemeeter-api",
+  "version": "0.0.1",
+  "description": "A RESTful API for voicemeeter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "voicemeeter",
+    "remote",
+    "api"
+  ],
+  "author": "Mickael MAYEUR",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "voicemeeter-remote": "0.0.1"
+  }
+}
