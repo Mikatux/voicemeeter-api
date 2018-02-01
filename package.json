@@ -4,7 +4,8 @@
   "description": "A RESTful API for voicemeeter",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "compile": "node compile.js"
   },
   "keywords": [
     "voicemeeter",
@@ -16,6 +17,10 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "voicemeeter-remote": "0.0.1"
+    "voicemeeter-remote": "^0.0.2"
+  },
+  "devDependencies": {
+    "nexe": "^2.0.0-rc.22",
+    "typescript": "^2.7.1"
   }
 }

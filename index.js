@@ -3,12 +3,7 @@ const bodyParser = require('body-parser');
 const voicemeeter = require('voicemeeter-remote');
 
 const app = express();
-try {
-  voicemeeter.login();
-} catch (e) {
-  console.error(e);
-  return -1;
-}
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -67,4 +62,12 @@ app.use(function (req, res, next) {
 app.use(function (err, req, res, next) {
   res.status(500).send("Sorry can't do that!")
 })
-app.listen(port);
+try {
+  voicemeeter.init().then(()=>{
+    voicemeeter.login();
+    app.listen(port);
+
+  })
+} catch (e) {
+  console.error(e);
+}
