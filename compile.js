@@ -1,5 +1,4 @@
 const { compile } = require('nexe')
-console.log(process.env)
 compile({
   input: './index.js',
   build: false,
