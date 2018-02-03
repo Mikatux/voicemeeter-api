@@ -17,7 +17,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "voicemeeter-remote": "^0.0.2"
+    "voicemeeter-remote": "0.0.4"
   },
   "devDependencies": {
     "nexe": "^2.0.0-rc.22",
